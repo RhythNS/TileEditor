@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Rhyth's Tile Editor Help</title>
+    <meta name="description" content="A help page for the Rhyth's Tile Editor Application">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Rhyth's Tile Editor help page</h1>
+	</header>
+	<section>
+		<p>Rhyth's Tile Editor is an editor for the RhyTiles library. It makes it easy to design and save tilemaps and later import them into a game engine of your choice. Simply integrate <a href="../RhyTiles.dll">this DLL</a> and you are ready to load a tileset and map.</p>
+	</section>
+	
+	<section>
+		<h2>Tilesets</h2>
+		<nav>
+			<element id="element1">
+				<p>Tilesets are the building blocks you use to create maps. You first have to draw or find an image you would like to use. The tileset cuts the image into defined pieces. The tiles in the image must have the same size and have no offset or padding.</p>
+				<br>
+				<p>To interact with the tileset, you have to use the right bottom part of the editor. Here you can select a tile from the current tileset and create or load tilesets.</p>
+				<br>
+				<p>The buttons in order from left to right do the following:</p>
+				<br>
+				<p><b>New</b> - This opens a dialog to help you create a new tileset.</p>
+				<p><b>Load</b> - This opens a window where you can select a previously saved tileset.</p>
+				<p><b>Save</b> - Save the current tileset to a previously saved location.</p>
+				<p><b>Save as</b> - Save the current tileset to a newly specified location.</p>
+				<p><b>Close</b> - Close the currently selected tileset.</p>
+			</element>
+			<element id="element2"> 
+				<img src="tileset.png" width="420" height="318">
+			</element>
+		</nav>
+		<nav>
+			<element id="element1"> 
+				<img src="createTileset.png" width="303" height="260">
+			</element>
+			<element id="element2"> 
+				<h2>Creating a new tileset</h2>
+				<br>
+				<p>When creating a new tileset, you have to set all properties needed in the dialog that opened up.</p>
+				<br>
+				<p>Here is an explanation for each property:</p>
+				<br>
+				<p><b>Name</b> - This makes it easier to identify which tileset is currently loaded. A name does not have to be unique to a tileset, but it is recommended that each name is different.</p>
+				<p><b>Source</b> - The source is the reference to the image that should be used. You can either type in a path directly or press the button next to the source to open a dialog to select a specific file.<p>
+				<p><b>Dimensions</b> - The width and height represent the width and height in pixels that a tile in a tileset has.</p>
+			</element>
+		</nav>
+		<nav>
+			<element id="element1"> 
+				<h2>Tileset Viewer</h2>
+				<br>
+				<p>The little window that is displaying your tileset is controlled with the mouse. To pan around the tileset, hold the middle mouse button and drag. To select a tile, press the left mouse button. To unselect a tile, either select press outside the tileset or press the right mouse button.</p>
+				<br>
+				<p>When you left-click a tile, it becomes highlighted. A highlighted tile is shown by having a blue tint on it. The highlighted tile is used when you use a tool in the Map Viewer window.</p>
+				<br>
+				<p>If you have more than one tileset opened, then you can use the tabs above the screen to change between them.</p>
+			</element>
+			<element id="element2"> 
+				<img src="tilesetHighlight.png" width="224" height="278">
+			</element>
+		</nav>
+	</section>
+	
+	<section>
+		<h2>Maps</h2>
+		<nav>
+			<element id="element1">
+				<p>The main window displays the map that you are working on.</p>
+				<br>
+				<p>Here, you can place tiles from tilesets and slowly build up your map.</p>
+				<br>
+				<p>The buttons on the top do the following:</p>
+				<br>
+				<p><b>New</b> - This opens a dialog to help you create a new map.</p>
+				<p><b>Load</b> - This opens a window where you can select a previously saved map.</p>
+				<p><b>Save</b> - Save the current map to a previously saved location.</p>
+				<p><b>Save as</b> - Save the current map to a newly specified location.</p>
+				<p><b>Close</b> - Close the currently selected map.</p>
+				<br>
+				<p><b>Brush</b> - Paint a single tile onto the map.</p>
+				<p><b>Eraser</b> - Delete a single tile from the map.</p>
+				<p><b>Flood Fill</b> - Replace all matching tiles from the map.</p>
+				<br>
+				<p><b>Undo</b> - Undo the last action.</p>
+				<p><b>Redo</b> - Redo the last undo.</p>
+			</element>
+			<element id="element2"> 
+				<img src="mapBasic.png" width="420" height="318">
+			</element>
+		</nav>
+		<nav>
+			<element id="element1"> 
+				<img src="createMap.png" width="302" height="262">
+			</element>
+			<element id="element2"> 
+				<h2>Creating a new map</h2>
+				<br>
+				<p>When creating a new map, you have to set all properties needed in the dialog that opened up.</p>
+				<br>
+				<p>Here is an explanation for each property:</p>
+				<br>
+				<p><b>Name</b> - This makes it easier to identify which map is currently being edited. A name does not have to be unique to a map, but it is recommended that each name is different.</p>
+				<br>
+				<p><b>Tile Width/ Tile Height</b> - The tile width and tile height represent the width and height in pixels that a tile on a map has. If a tile that has different dimensions is put onto the map then the tile gets streteched to fit into the tile.</p>
+				<p><b>Width/ Height</b> - The width and tile height represent the amount of tiles are on the map.</p>
+			</element>
+		</nav>
+		<nav>
+			<element id="element1"> 
+				<h2>Map Viewer</h2>
+				<br>
+				<p>The map viewer has similar controls to the tileset viewer. To pan around the map, hold the middle mouse button and drag. To use your current select tool, press the left mouse button. The tool will be applied to the clicked tile on the map.</p>
+				<br>
+				<p>If you have more than one map opened, then you can use the tabs above the screen to change between them.</p>
+			</element>
+			<element id="element2"> 
+				<img src="placingTile.png" width="303" height="279">
+			</element>
+		</nav>
+		<nav>
+			<element id="element1"> 
+				<img src="layers.png" width="227" height="277">
+			</element>
+			<element id="element2"> 
+				<h2>Layers</h2>
+				<br>
+				<p>Layers are virtually maps put on top of other maps. The first layer is drawn first. This means that you can have transparent tiles on the above layers to make a detailed looking map.</p>
+				<br>
+				<p>The layers can be found on the right-hand side above the tileset viewer.</p>
+				<br>
+				<p>When you are editing a map, you always draw on the currently selected layer. To select a layer, press on one of the layers listed.</p>
+				<br>
+				<p>Here is an explanation for each button. You can also right click on a layer to bring up a menu with all the buttons inside it or double click a layer to quickly rename it.</p>
+				<br>
+				<p><b>New</b> - This creates a new layer.</p>
+				<p><b>Remove</b> - This removes the currently selected layer.</p>
+				<p><b>Rename</b> - Renames the current selected layer.</p>
+				<p><b>Toggle visibility</b> - Toggle visibility on the currently selected layer. Only visible layers are drawn on the map.</p>
+				<p><b>Move layer up</b> - Moves the currently selected layer up by one.</p>
+				<p><b>Move layer down</b> - Moves the currently selected layer down by one.</p>
+			</element>
+		</nav>
+	</section>
+	
+	<section>
+		<nav>
+			<element id="element1">
+				<h2>Config</h2>
+				<br>
+				<p>The config menu is brought up by pressing the "Config" button on the tool strip.</p>
+				<br>
+				<p>In here, you can adjust settings that are saved automatically when you press the "close" button.</p>
+				<br>
+				<p>If at any point you are unhappy with the current configuration you can press the "Reset" button to reset the configuration to the default one.</p>
+			</element>
+			<element id="element2"> 
+				<img src="config.png" width="316" height="357">
+			</element>
+		</nav>
+	</section>
+	
+	<section>
+		<nav>
+			<element>
+			<h2>Shortcuts</h2>
+				<br>
+				<p>Here are keyboard shortcuts to make working in the editor easier:</p>
+				<br>
+				<p><b>Undo (CTRL + Z)</b> - Undo the last action.</p>
+				<p><b>Redo (CTRL + Y)</b> - Redo the last undo.</p>
+				<p><b>Save (CTRL + S)</b> - Save the current map to a previously saved location.</p>
+				<p><b>Save as (CTRL + SHIFT + S)</b> - Save the current map to a newly specified location.</p>
+				<p><b>Close (CTRL + W)</b> - Close the currently selected map.</p>
+				<p><b>Load</b> - This opens a window where you can load a previously saved map.</p>
+				<br>
+				<p><b>Brush (B)</b> - Select the brush tool.</p>
+				<p><b>Eraser (D)</b> - Select the eraser tool.</p>
+				<p><b>Flood Fill (F)</b> - Select the flood fill tool.</p>
+				<br>
+				<p>These shortcuts are only for dialogs:</p>
+				<p><b>Enter (Accept)</b> - Quickly accept the dialog.</p>
+				<p><b>Close (Cancel)</b> - Quickly cancel the dialog.<p>
+			</element>
+		</nav>
+	</section>
+	
+	<section>
+		<nav>
+			<element>
+			<h2>Quickly open a file</h2>
+				<br>
+				<p>You can quickly open a map or tileset by simply dragging it from the windows explorer right into the application window. No more browsing through menus!</p>
+				<br>
+			</element>
+		</nav>
+	</section>
+	
+	<footer>
+		<p>&copy;<a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+	</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80DFC7CE-A0B0-4F62-B530-F4AB4EDB13EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RhythsTileEditor</RootNamespace>
+    <AssemblyName>RhythsTileEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIFileParser, Version=2.5.2.0, Culture=neutral, PublicKeyToken=79af7b307b65cf3c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ini-parser.2.5.2\lib\net20\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.8.0.270, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MonoGameForms\Libs\MonoGame\WindowsDX\Lib\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\BaseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MapControls\MapControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TilesetControls\TileSetControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateMapEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateMapEditor.Designer.cs">
+      <DependentUpon>CreateMapEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm_Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm_Tileset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm_Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm_ToolStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormClasses\MainForm_Layers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TileSetEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TileSetEditor.Designer.cs">
+      <DependentUpon>TileSetEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Config.cs" />
+    <Compile Include="Main\Constants.cs" />
+    <Compile Include="Main\Globals.cs" />
+    <Compile Include="Main\RecentFiles.cs" />
+    <Compile Include="Mono\Components\Commands\Command.cs" />
+    <Compile Include="Mono\Components\Commands\LayerCommands\LayerAddCommand.cs" />
+    <Compile Include="Mono\Components\Commands\LayerCommands\LayerCommand.cs" />
+    <Compile Include="Mono\Components\Commands\LayerCommands\LayerRemoveCommand.cs" />
+    <Compile Include="Mono\Components\Commands\LayerCommands\LayerSetVisible.cs" />
+    <Compile Include="Mono\Components\Commands\LayerCommands\MoveLayerCommand.cs" />
+    <Compile Include="Mono\Components\Commands\LayerCommands\RenameLayerCommand.cs" />
+    <Compile Include="Mono\Components\Commands\MapCommands\MapCommand.cs" />
+    <Compile Include="Mono\Components\Commands\CommandManager.cs" />
+    <Compile Include="Mono\Components\Commands\MapCommands\DeleteCommand.cs" />
+    <Compile Include="Mono\Components\Commands\MapCommands\DrawCommand.cs" />
+    <Compile Include="Mono\Components\Commands\MapCommands\EmptyCommand.cs" />
+    <Compile Include="Mono\Components\Commands\MapCommands\FloodFillCommand.cs" />
+    <Compile Include="Mono\Components\HighlitingNormalTile.cs" />
+    <Compile Include="Mono\Components\HighlitingTile.cs" />
+    <Compile Include="Mono\Components\HighlitingTilesetTile.cs" />
+    <Compile Include="Mono\Components\IClickable.cs" />
+    <Compile Include="Mono\Components\MapEditorMouseControl.cs" />
+    <Compile Include="Mono\Components\MouseControlComponent.cs" />
+    <Compile Include="Mono\ECS\Actor\Actor.cs" />
+    <Compile Include="Mono\ECS\Actor\Component\Component.cs" />
+    <Compile Include="Mono\ECS\Actor\Component\Components\ScaledTransform2.cs" />
+    <Compile Include="Mono\ECS\Actor\Component\Components\SharedPositionTransform2.cs" />
+    <Compile Include="Mono\ECS\Actor\Component\Components\Transform2.cs" />
+    <Compile Include="Mono\ECS\Actor\Coroutine\Coroutine.cs" />
+    <Compile Include="Mono\ECS\Actor\Coroutine\WaitForSeconds.cs" />
+    <Compile Include="Mono\ECS\Actor\Coroutine\YieldInstruction.cs" />
+    <Compile Include="Mono\ECS\Stage.cs" />
+    <Compile Include="Mono\GameSystem\GameSystem.cs" />
+    <Compile Include="Mono\GameSystem\GameSystemManager.cs" />
+    <Compile Include="Mono\GameSystem\GameSystems\Input.cs" />
+    <Compile Include="Mono\GameSystem\GameSystems\Time.cs" />
+    <Compile Include="Mono\Graphics\AnimatedTextureRegionComponent.cs" />
+    <Compile Include="Mono\Graphics\Animation.cs" />
+    <Compile Include="Mono\Graphics\Camera.cs" />
+    <Compile Include="Mono\Graphics\DrawTextureComponent.cs" />
+    <Compile Include="Mono\Graphics\DrawTextureRegionComponent.cs" />
+    <Compile Include="Mono\Components\RhyTileMapDrawComponent.cs" />
+    <Compile Include="Mono\Graphics\TextureRegion.cs" />
+    <Compile Include="Mono\Util\Datatypes\Box2D.cs" />
+    <Compile Include="Mono\Util\Datatypes\MultiKey.cs" />
+    <Compile Include="Mono\Util\Interfaces\IDrawable.cs" />
+    <Compile Include="Mono\Util\Interfaces\IUpdateable.cs" />
+    <Compile Include="Mono\Util\Log.cs" />
+    <Compile Include="Mono\Util\MathUtil.cs" />
+    <Compile Include="Mono\Util\MonoUtils.cs" />
+    <Compile Include="Mono\Util\Overlap\IOverlapable.cs" />
+    <Compile Include="Mono\Util\Overlap\IOverlapManager.cs" />
+    <Compile Include="Mono\Util\Overlap\Overlapable.cs" />
+    <Compile Include="Mono\Util\Overlap\RecursiveOverlapManager.cs" />
+    <Compile Include="Mono\Util\Pools\IPoolable.cs" />
+    <Compile Include="Mono\Util\Pools\Pool.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateMapEditor.resx">
+      <DependentUpon>CreateMapEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormClasses\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TileSetEditor.resx">
+      <DependentUpon>TileSetEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonoGameForms\MonoGame.Forms.DX\MonoGame.Forms.DX.csproj">
+      <Project>{c1fe2c42-5590-4202-adc7-ecff8ff404d7}</Project>
+      <Name>MonoGame.Forms.DX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RhyTiles\RhyTiles.csproj">
+      <Project>{9e8a3c04-cf60-45f1-aa18-b267ecbb493d}</Project>
+      <Name>RhyTiles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Help\config.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\createMap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\createTileset.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\layers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\map.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\mapBasic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\placingTile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\tileset.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Help\tilesetHighlight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

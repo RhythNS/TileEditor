@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="RhythsTileEditor.Controls.BaseControl&lt;T&gt;">
+    <Position X="27" Y="9" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQABgAAACAAAwAAAAAAAAAAABAAAABCIggAAAACAAA=</HashCode>
+      <FileName>Controls\BaseControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhyTiles.MapControls.MapControl">
+    <Position X="24.75" Y="13.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABBAAAQAAAAAAAAQBAEoAgBACQAAEAAAAAAA=</HashCode>
+      <FileName>Controls\MapControls\MapControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhyTiles.Controls.TilesetControls.TileSetControl">
+    <Position X="29.25" Y="13.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAAIAAAAAAAAAAAAACAAQAIAAAAAA=</HashCode>
+      <FileName>Controls\TilesetControls\TileSetControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Forms.ConfigForm">
+    <Position X="64.5" Y="4.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>QACAABAkACIIYhogABqkAASCAAACAASAACIgABABBEA=</HashCode>
+      <FileName>Forms\ConfigForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Forms.CreateMapEditor">
+    <Position X="43.25" Y="4.75" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAEAACQKJBggAgaAEBACAQAAAAAAAAQAEDAAAAA=</HashCode>
+      <FileName>Forms\CreateMapEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Forms.RenameForm">
+    <Position X="60" Y="4.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAQICQAgAAAAACQAAACEAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\RenameForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhyTiles.MainForm">
+    <Position X="35.5" Y="4.75" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>xagZEiFqQeYESQyARGS0rMEiBgEgwFaO4oCALR6IiIg=</HashCode>
+      <FileName>Forms\MainFormClasses\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhyTiles.Forms.TileSetEditor">
+    <Position X="55.25" Y="4.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>QFAAAAEAAiQIBBAwAgTAEAACAIgAAAAAAAAAECQAAAA=</HashCode>
+      <FileName>Forms\TileSetEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Main.Config">
+    <Position X="65.5" Y="17.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>IQCAkIAAgEAAJAAAAAAEAAAkAQIEIBgiBAAIAAAAACA=</HashCode>
+      <FileName>Main\Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Main.Constants">
+    <Position X="46.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgEAAIAAAAAAgAAABAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Main\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Main.RecentFiles">
+    <Position X="52.75" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAAAAAAAAAAEAAAABAAAEAIAAAAAACIAACVAAAE=</HashCode>
+      <FileName>Main\RecentFiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhyTiles.Main.Globals">
+    <Position X="44.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Main\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.Command">
+    <Position X="49" Y="31.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.CommandManager">
+    <Position X="44" Y="30" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAABAAAACABEABAAAAAAABAIAAAAAAAAAAAAAAAgg=</HashCode>
+      <FileName>Mono\Components\Commands\CommandManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.MoveLayerCommand">
+    <Position X="62.75" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAABAAAAAAAABgAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\LayerCommands\MoveLayerCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.DeleteCommand">
+    <Position X="39" Y="45.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\MapCommands\DeleteCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.DrawCommand">
+    <Position X="39" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\MapCommands\DrawCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.EmptyCommand">
+    <Position X="43" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAABAABAQAAAAAAAAQAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\MapCommands\EmptyCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.FloodFillCommand">
+    <Position X="46.75" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAQAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\MapCommands\FloodFillCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.MapCommand">
+    <Position X="43" Y="36" Width="3.25" />
+    <NestedTypes>
+      <Struct Name="RhythsTileEditor.Mono.Components.Commands.MapCommand.Change" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Mono\Components\Commands\MapCommands\MapCommand.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAAACAABAABAQAAAAMAAAQgAABABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\MapCommands\MapCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.LayerCommands.LayerAddCommand">
+    <Position X="52.25" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\LayerCommands\LayerAddCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.LayerCommands.LayerCommand">
+    <Position X="59" Y="36.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\LayerCommands\LayerCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.LayerCommands.LayerRemoveCommand">
+    <Position X="59.25" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQACAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\LayerCommands\LayerRemoveCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.LayerCommands.LayerSetVisible">
+    <Position X="55.75" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\LayerCommands\LayerSetVisible.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.Commands.LayerCommands.RenameLayerCommand">
+    <Position X="66.5" Y="41.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABARAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\LayerCommands\RenameLayerCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.HighlitingNormalTile">
+    <Position X="13.75" Y="28" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAABAAAAAAAAAAAAAAACAAAAAAABAAAAAA=</HashCode>
+      <FileName>Mono\Components\HighlitingNormalTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.HighlitingTile&lt;T&gt;">
+    <Position X="14.5" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAABgQAQAAAAAIAAAAiiAAACAAABAAAAgE=</HashCode>
+      <FileName>Mono\Components\HighlitingTile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.HighlitingTilesetTile">
+    <Position X="17.5" Y="28" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAABAAAAAAAAAAAAAACCAAAYAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\HighlitingTilesetTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.MapEditorMouseControl">
+    <Position X="21.75" Y="28" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAABAAAAAAIAAAAIACAAA=</HashCode>
+      <FileName>Mono\Components\MapEditorMouseControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.MouseControlComponent&lt;T&gt;">
+    <Position X="21.5" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAhAiAQBAAAAAAKAAAAABAiEEQAJgAQEUACAAA=</HashCode>
+      <FileName>Mono\Components\MouseControlComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Components.RhyTileMapDrawComponent">
+    <Position X="18" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAgAABAAAAAAAAAICAAAAAAAAFABAAAA=</HashCode>
+      <FileName>Mono\Components\RhyTileMapDrawComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mono.ECS.Actor" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="9" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAACAJBwEAAAGEBAAAAAAAgAAEAAgAAqBAEAA=</HashCode>
+      <FileName>Mono\ECS\Actor\Actor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mono.ECS.Component">
+    <Position X="11.25" Y="18" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAgQAAAAAAAAAAAAACAAAAAAgAAABAAAA=</HashCode>
+      <FileName>Mono\ECS\Actor\Component\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.ECS.Coroutine">
+    <Position X="16.25" Y="9" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAAAAAAAQAAAAJAAAAiAAAAAAAAAAAACA=</HashCode>
+      <FileName>Mono\ECS\Actor\Coroutine\Coroutine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.ECS.WaitForSeconds">
+    <Position X="19.75" Y="10.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Mono\ECS\Actor\Coroutine\WaitForSeconds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.ECS.YieldInstruction">
+    <Position X="19.75" Y="9" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\ECS\Actor\Coroutine\YieldInstruction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.ECS.Stage" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="9" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>EBQGAAABACAAAgAAKIAAgAgIIAAAwEAEQAAEAAAAAQA=</HashCode>
+      <FileName>Mono\ECS\Stage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mono.ECS.Components.ScaledTransform2">
+    <Position X="5.25" Y="28" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\ECS\Actor\Component\Components\ScaledTransform2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.ECS.Components.SharedPositionTransform2">
+    <Position X="9.25" Y="28" Width="3.25" />
+    <NestedTypes>
+      <Class Name="Mono.ECS.Components.SharedPositionTransform2.SharedVariables" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Mono\ECS\Actor\Component\Components\SharedPositionTransform2.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAAQAAAAAAAAAAAAACQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\ECS\Actor\Component\Components\SharedPositionTransform2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.ECS.Components.Transform2">
+    <Position X="7.5" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAgARAAAAgQAAAAAAKAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Mono\ECS\Actor\Component\Components\Transform2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.GameSystems.GameSystem">
+    <Position X="13" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\GameSystem\GameSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.GameSystems.GameSystemManager">
+    <Position X="7.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAABAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\GameSystem\GameSystemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.GameSystems.Input">
+    <Position X="11" Y="4.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgAACAAgAAAAAgABAABAAAABAAAAAAAA=</HashCode>
+      <FileName>Mono\GameSystem\GameSystems\Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.GameSystems.Time">
+    <Position X="15.5" Y="4.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QARBAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\GameSystem\GameSystems\Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.Graphics.AnimatedTextureRegionComponent">
+    <Position X="11" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAEAABgAAAAAAAEAAAAAGEACAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Graphics\AnimatedTextureRegionComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mono.Graphics.Animation&lt;T&gt;">
+    <Position X="1" Y="24" Width="3.25" />
+    <NestedTypes>
+      <Enum Name="Mono.Graphics.Animation&lt;T&gt;.PlaybackMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Mono\Graphics\Animation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAEAAAAAAAEAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Graphics\Animation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.Graphics.Camera">
+    <Position X="5.5" Y="9" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAABJBgMCAACAAACAAQAAAAAAIAIEAAEBA=</HashCode>
+      <FileName>Mono\Graphics\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.Graphics.DrawTextureRegionComponent">
+    <Position X="4" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAgAAAACAAAAAAAAGAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Graphics\DrawTextureRegionComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mono.Graphics.TextureRegion">
+    <Position X="2.25" Y="17.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAhAAAAQAAAAAAAA=</HashCode>
+      <FileName>Mono\Graphics\TextureRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Graphics.DrawTextureComponent">
+    <Position X="0.5" Y="21" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAIAAAAAAAAAGAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Graphics\DrawTextureComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mono.Util.Log">
+    <Position X="6.75" Y="3.25" Width="3.25" />
+    <NestedTypes>
+      <Enum Name="Mono.Util.Log.Level" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Mono\Util\Log.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAgAAQCgAAAgAAAAAABAAAEAAAAAAEAEAAA=</HashCode>
+      <FileName>Mono\Util\Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Mono.Util.MathUtil">
+    <Position X="40.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\MathUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhyTiles.Mono.Util.MonoUtils">
+    <Position X="26.5" Y="1" Width="6.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\MonoUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mono.Util.Overlap.Overlapable">
+    <Position X="19.5" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Overlap\Overlapable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mono.Util.Overlap.RecursiveOverlapManager&lt;T&gt;">
+    <Position X="19.5" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gAIgAARgAAQAAAAAAAAABgAAIAQAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Mono\Util\Overlap\RecursiveOverlapManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mono.Util.Pools.Pool&lt;T&gt;">
+    <Position X="2.5" Y="3" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABAAAAAAAAAAAABAAAAAAAAAABAAAI=</HashCode>
+      <FileName>Mono\Util\Pools\Pool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Program">
+    <Position X="62.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Properties.Resources">
+    <Position X="51.75" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RhythsTileEditor.Properties.Settings">
+    <Position X="48.25" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Mono.Util.Datatypes.Box2D">
+    <Position X="27.5" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAADgAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Datatypes\Box2D.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Mono.Util.Datatypes.MultiKey&lt;T&gt;">
+    <Position X="49.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Datatypes\MultiKey.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="RhythsTileEditor.Mono.Components.IClickable">
+    <Position X="11.25" Y="16.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Mono\Components\IClickable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mono.Interfaces.IDrawable">
+    <Position X="7.75" Y="16.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Interfaces\IDrawable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mono.Interfaces.IUpdateable">
+    <Position X="14.75" Y="16.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Interfaces\IUpdateable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mono.Util.Overlap.IOverlapable">
+    <Position X="23" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Overlap\IOverlapable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mono.Util.Overlap.IOverlapManager&lt;T&gt;">
+    <Position X="23" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAgAAQAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Overlap\IOverlapManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mono.Util.Pools.IPoolable">
+    <Position X="2.75" Y="1" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Util\Pools\IPoolable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="RhythsTileEditor.Main.OnColorChanged">
+    <Position X="67.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Main\Config.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="RhythsTileEditor.Main.OnIntChanged">
+    <Position X="65.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Main\Config.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="RhythsTileEditor.Mono.Components.Commands.CommandsAvailable">
+    <Position X="49" Y="30" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\Components\Commands\CommandManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Mono.ECS.ComponentAdded">
+    <Position X="1.25" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mono\ECS\Stage.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
